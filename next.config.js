@@ -7,6 +7,10 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  images: {
+    domains: ['media.raiyansarker.com'],
+  },
+  experimental: { images: { allowFutureImage: true } },
 };
 
 module.exports = nextConfig;
