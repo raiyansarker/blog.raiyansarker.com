@@ -1,6 +1,5 @@
 // @ts-ignore
 import { UilSearch } from '@iconscout/react-unicons';
-import Image from 'next/future/image';
 import Link from 'next/link';
 import NavLinks from './NavLinks';
 import ProfileMenu from './Profile';
@@ -22,20 +21,11 @@ const Header = () => {
               </Link>
             </h1>
             <NavLinks />
-            <div className="space-x-2">
-              <button className="group focus:outline-none focus:ring-2 focus:rounded-lg px-2 py-1.5">
+            <div className="space-x-2 flex flex-row justify-center items-center">
+              <button className="group focus:outline-none focus:ring-2 focus:rounded-lg px-1.5 py-1">
                 <UilSearch className="aspect-square w-5 text-dark-accent hover:text-secondary group-focus:text-secondary" />
               </button>
-              <ProfileMenu>
-                <div className="w-6 ring-1 aspect-square rounded-full overflow-hidden">
-                  <Image
-                    src="https://media.raiyansarker.com/avatar/default.png"
-                    alt="Avatar"
-                    width={80}
-                    height={80}
-                  />
-                </div>
-              </ProfileMenu>
+              <ProfileMenu />
             </div>
           </div>
         </div>
