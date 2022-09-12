@@ -4,7 +4,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 const Profile = () => {
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="w-6 ring-1 aspect-square rounded-full overflow-hidden">
+      <DropdownMenu.Trigger className="w-6 ring-1 ring-gray-800 aspect-square rounded-full overflow-hidden">
         <Image
           src="https://media.raiyansarker.com/avatar/default.png"
           alt="Avatar"
