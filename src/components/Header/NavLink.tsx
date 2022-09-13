@@ -12,7 +12,7 @@ const NavLink = ({ href, link }: { href: string; link: string }) => {
     <>
       <Link href={href}>
         <a
-          className={cs({
+          className={cs('underline__hover__link', {
             'text-primary-normal': activeRoute(href),
             'text-dark-accent hover:text-black focus:text-black':
               !activeRoute(href),

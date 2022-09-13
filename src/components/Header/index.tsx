@@ -1,12 +1,31 @@
 // @ts-ignore
 import { UilSearch } from '@iconscout/react-unicons';
+import { AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { useEffect, useState, useRef } from 'react';
+import MobileMenu from './MobileMenu';
 import NavLinks from './NavLinks';
 import ProfileMenu from './Profile';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflowY = 'visible';
+      document.body.style.overflowX = 'hidden';
+      menuButton.current?.focus();
+    }
+  }, [menuOpen]);
+
   return (
     <>
+      <AnimatePresence>
+        {menuOpen && <MobileMenu setMenuOpen={setMenuOpen} />}
+      </AnimatePresence>
       <div className="w-screen top-0 sticky h-16 grid items-center shadow-sm shadow-[rgba(0,0,0,0.1)]">
         <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="hidden md:flex justify-between items-center">
@@ -45,7 +64,11 @@ const Header = () => {
               </h1>
               <div className="flex flex-row justify-center items-center space-x-2.5">
                 <ProfileMenu />
-                <button className="group focus:outline-none focus:ring-2 focus:rounded-lg px-1.5 py-1">
+                <button
+                  onClick={() => setMenuOpen((state: boolean) => !state)}
+                  ref={menuButton}
+                  className="group focus:outline-none focus:ring-2 focus:rounded-lg px-1.5 py-1"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
