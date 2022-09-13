@@ -9,7 +9,7 @@ const Header = () => {
     <>
       <div className="w-screen top-0 sticky h-16 grid items-center shadow-sm shadow-[rgba(0,0,0,0.1)]">
         <div className="w-11/12 lg:w-10/12 mx-auto">
-          <div className="hidden lg:flex justify-between items-center">
+          <div className="hidden md:flex justify-between items-center">
             <h1 className="font-semibold text-dark-primary text-xl">
               <Link href="/">
                 <a>
@@ -28,7 +28,7 @@ const Header = () => {
               <ProfileMenu />
             </div>
           </div>
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <div className="flex flex-row justify-between items-center">
               <button className="group focus:outline-none focus:ring-2 focus:rounded-lg px-1.5 py-1">
                 <UilSearch className="aspect-square w-5 text-dark-accent hover:text-secondary group-focus:text-secondary" />
