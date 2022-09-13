@@ -51,7 +51,7 @@ const Footer = () => {
                 Disclaimer
               </a>
             </Link>
-            <Link href="//status.raiyansarker.com">
+            <Link href="https://status.raiyansarker.com">
               <a className="text-bold text-sm underline__hover__link text-black">
                 About
               </a>
