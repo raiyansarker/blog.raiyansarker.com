@@ -17,7 +17,7 @@ const Profile = () => {
           sideOffset={5}
           side="bottom"
           align="end"
-          className="border-[1px] border-gray-500 bg-gray-50 py-1 rounded shadow min-w-full"
+          className="border-[1px] z-10 border-gray-500 bg-gray-50 py-1 rounded shadow min-w-full"
         >
           <DropdownMenu.Item className="outline-none hover:bg-indigo-500 hover:text-white focus:bg-indigo-500 focus:text-white px-3 py-0.5">
             <Link href="/profile">
