@@ -4,7 +4,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 const Profile = () => {
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="w-6 ring-1 ring-gray-800 aspect-square rounded-full overflow-hidden">
+      <DropdownMenu.Trigger className="w-6 border-[1px] border-gray-800 aspect-square rounded-full overflow-hidden focus:ring-1 outline-none focus:ring-offset-2 focus:ring-slate-800">
         <Image
           src="https://media.raiyansarker.com/avatar/default.png"
           alt="Avatar"
@@ -15,20 +15,22 @@ const Profile = () => {
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           sideOffset={5}
-          className="bg-gray-50 rounded drop-shadow-xl py-2 min-w-full"
+          side="bottom"
+          align="end"
+          className="border-[1px] border-gray-500 bg-gray-50 py-1 rounded shadow min-w-full"
         >
           <DropdownMenu.Item className="outline-none hover:bg-indigo-500 hover:text-white focus:bg-indigo-500 focus:text-white px-3 py-0.5">
             <Link href="/profile">
-              <a>Profile</a>
+              <a className="text-sm">Profile</a>
             </Link>
           </DropdownMenu.Item>
           <DropdownMenu.Item className="outline-none hover:bg-indigo-500 hover:text-white focus:bg-indigo-500 focus:text-white px-3 py-0.5">
             <Link href="/logout">
-              <a>Logout</a>
+              <a className="text-sm">Logout</a>
             </Link>
           </DropdownMenu.Item>
 
-          <DropdownMenu.Arrow className="fill-gray-50" />
+          <DropdownMenu.Arrow className="fill-gray-500" />
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>
