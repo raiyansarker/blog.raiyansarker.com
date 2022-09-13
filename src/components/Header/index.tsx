@@ -17,7 +17,6 @@ const Header = () => {
     } else {
       document.body.style.overflowY = 'visible';
       document.body.style.overflowX = 'hidden';
-      menuButton.current?.focus();
     }
   }, [menuOpen]);
 
