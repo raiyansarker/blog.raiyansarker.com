@@ -25,7 +25,7 @@ const Header = () => {
       <AnimatePresence>
         {menuOpen && <MobileMenu setMenuOpen={setMenuOpen} />}
       </AnimatePresence>
-      <div className="w-screen top-0 sticky h-16 grid items-center shadow-sm shadow-[rgba(0,0,0,0.1)]">
+      <div className="w-screen z-10 backdrop-blur bg-white/60 top-0 sticky h-16 grid items-center shadow-sm shadow-[rgba(0,0,0,0.1)]">
         <div className="w-11/12 lg:w-10/12 mx-auto">
           <div className="hidden md:flex justify-between items-center">
             <h1 className="font-semibold text-dark-primary text-xl">
