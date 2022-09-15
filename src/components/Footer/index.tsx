@@ -70,7 +70,7 @@ const Footer = () => {
             </h3>
             <div className="flex flex-col lg:flex-row lg:items-center items-end justify-center space-y-2 lg:space-y-0 lg:space-x-2">
               <Link href="https://stellate.co/?ref=powered-by">
-                <a>
+                <a className="outline-none">
                   <svg
                     width={136}
                     height={60}
@@ -123,7 +123,7 @@ const Footer = () => {
                 </a>
               </Link>
               <Link href="https://cloudflare.com">
-                <a className="ring-1 ring-[#C9CED8] rounded-lg">
+                <a className="ring-1 ring-[#C9CED8] rounded-lg outline-none">
                   <svg
                     className="p-2"
                     data-name="Layer 1"
