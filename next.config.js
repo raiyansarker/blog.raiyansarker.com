@@ -8,9 +8,8 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ['media.raiyansarker.com'],
+    loader: 'custom',
   },
-  experimental: { images: { allowFutureImage: true } },
 };
 
 module.exports = nextConfig;

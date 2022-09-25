@@ -1,12 +1,12 @@
-import Image from 'next/future/image';
+import Image from '../Image';
 import Link from 'next/link';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 const Profile = () => {
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="w-6 border-[1px] border-gray-800 aspect-square rounded-full overflow-hidden focus:ring-1 outline-none focus:ring-offset-2 focus:ring-slate-800">
+      <DropdownMenu.Trigger className="w-7 border-[1px] border-gray-800 aspect-square rounded-full overflow-hidden focus:ring-1 outline-none focus:ring-offset-2 focus:ring-slate-800">
         <Image
-          src="https://media.raiyansarker.com/avatar/default.png"
+          src="https://avatar.raiyansarker.com/u/1.png"
           alt="Avatar"
           width={80}
           height={80}
