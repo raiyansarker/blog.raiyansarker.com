@@ -1,5 +1,4 @@
 import Image from '../Image';
-import Link from 'next/link';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 const Profile = () => {
   return (
@@ -17,20 +16,23 @@ const Profile = () => {
           sideOffset={5}
           side="bottom"
           align="end"
-          className="border-[1px] z-10 border-gray-500 bg-gray-50 py-1 rounded shadow min-w-full"
+          className="z-10 bg-gray-50 flex flex-col justify-start items-center space-y-0.5 p-1 rounded shadow-2xl shadow-gray-500 min-w-full"
         >
-          <DropdownMenu.Item className="outline-none hover:bg-indigo-500 hover:text-white focus:bg-indigo-500 focus:text-white px-3 py-0.5">
-            <Link href="/profile">
-              <a className="text-sm">Profile</a>
-            </Link>
+          <DropdownMenu.Item asChild={true}>
+            <a
+              href="/profile"
+              className="px-3 py-1 text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white"
+            >
+              Profile
+            </a>
           </DropdownMenu.Item>
-          <DropdownMenu.Item className="outline-none hover:bg-indigo-500 hover:text-white focus:bg-indigo-500 focus:text-white px-3 py-0.5">
-            <Link href="/logout">
-              <a className="text-sm">Logout</a>
-            </Link>
+          <DropdownMenu.Item asChild={true}>
+            <button className="px-3 py-1 text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white">
+              Logout
+            </button>
           </DropdownMenu.Item>
 
-          <DropdownMenu.Arrow className="fill-gray-500" />
+          <DropdownMenu.Arrow className="fill-gray-50" />
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>
