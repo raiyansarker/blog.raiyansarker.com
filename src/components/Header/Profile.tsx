@@ -6,8 +6,9 @@ const Profile = () => {
       <DropdownMenu.Trigger className="w-7 border-[1px] border-gray-800 aspect-square rounded-full overflow-hidden focus:ring-1 outline-none focus:ring-offset-2 focus:ring-slate-800">
         {/* eslint-disable-next-line */}
         <img
-          src="https://ui-avatars.com/api/?rounded=true&name=raiyan+sarker&background=ECF4FF&color=4338ca&bold=true"
+          src={`https://ui-avatars.com/api/?rounded=true&name=Raiyan+Sarker&background=ECF4FF&color=4338ca&bold=true`}
           alt="Avatar"
+          title="Login"
           width={80}
           height={80}
         />
