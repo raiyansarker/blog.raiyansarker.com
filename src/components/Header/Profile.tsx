@@ -20,25 +20,28 @@ const Profile = () => {
           sideOffset={5}
           side="bottom"
           align="end"
-          className="z-10 bg-gray-50 flex flex-col justify-start items-center space-y-0.5 p-1 rounded shadow-2xl shadow-gray-500 min-w-full"
+          className="border-[1px] border-gray-300 z-10 bg-gray-50 flex flex-col justify-start items-center p-1 rounded shadow-2xl shadow-gray-500 min-w-full"
         >
           <DropdownMenu.Item asChild={true}>
             <a
               href="/profile"
-              className="pl-2 pr-8 py-1 flex flex-row justify-start items-center text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white"
+              className="w-full pl-2 pr-8 py-1 flex flex-row justify-start items-center text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white"
             >
               <UilUserCircle className="inline-block aspect-square w-4 mr-1" />
               Profile
             </a>
           </DropdownMenu.Item>
           <DropdownMenu.Item asChild={true}>
-            <button className="pl-2 pr-8 py-1 text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white">
+            <a
+              href="/logout"
+              className="w-ful pl-2 pr-8 py-1 flex flex-row justify-start items-center text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white"
+            >
               <UilSignOutAlt className="inline-block aspect-square w-4 mr-1" />
               Logout
-            </button>
+            </a>
           </DropdownMenu.Item>
 
-          <DropdownMenu.Arrow className="fill-gray-50" />
+          <DropdownMenu.Arrow className="fill-gray-300" />
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>
