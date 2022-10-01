@@ -1,5 +1,5 @@
-import NextImage from 'next/future/image';
-import { ImageProps, ImageLoaderProps } from 'next/future/image';
+import NextImage from 'next/image';
+import { ImageProps, ImageLoaderProps } from 'next/image';
 
 const imageLoader = ({ src, width, quality }: ImageLoaderProps): string => {
   const url = `https://images.raiyansarker.com/${
