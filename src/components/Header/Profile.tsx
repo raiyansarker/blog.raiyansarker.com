@@ -23,22 +23,22 @@ const Profile = () => {
           align="end"
           className="border-[1px] border-gray-300 z-10 bg-gray-50 flex flex-col justify-start items-center p-1 rounded shadow-2xl shadow-gray-500 min-w-full"
         >
-          <DropdownMenu.Item className="w-full pl-2 pr-8 py-1 flex flex-row justify-start items-center text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white">
-            <Link href="/profile">
-              <a>
+          <Link href="/profile" passHref={true}>
+            <DropdownMenu.Item asChild={true}>
+              <a className="w-full pl-2 pr-8 py-1 flex flex-row justify-start items-center text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white">
                 <UilUserCircle className="inline-block aspect-square w-4 mr-1" />
                 Profile
               </a>
-            </Link>
-          </DropdownMenu.Item>
-          <DropdownMenu.Item className="w-full pl-2 pr-8 py-1 flex flex-row justify-start items-center text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white">
-            <Link href="/logout">
-              <a>
+            </DropdownMenu.Item>
+          </Link>
+          <Link href="/logout" passHref={true}>
+            <DropdownMenu.Item asChild={true}>
+              <a className="w-full pl-2 pr-8 py-1 flex flex-row justify-start items-center text-sm font-medium hover:rounded focus:rounded outline-none hover:bg-[#32275F] hover:text-white focus:bg-[#32275F] focus:text-white">
                 <UilSignOutAlt className="inline-block aspect-square w-4 mr-1" />
                 Logout
               </a>
-            </Link>
-          </DropdownMenu.Item>
+            </DropdownMenu.Item>
+          </Link>
 
           <DropdownMenu.Arrow className="fill-gray-300" />
         </DropdownMenu.Content>
