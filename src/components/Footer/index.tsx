@@ -47,19 +47,19 @@ const Footer = () => {
                   Privacy Policy
                 </a>
               </Link>
-              <Link href="/disclaimer">
+              <Link href="/sitemap.xml">
                 <a className="text-bold text-sm underline__hover__link text-black">
-                  Disclaimer
+                  Sitemap
                 </a>
               </Link>
               <Link href="https://status.raiyansarker.com">
                 <a className="text-bold text-sm underline__hover__link text-black">
-                  About
+                  Status
                 </a>
               </Link>
-              <Link href="/contact">
+              <Link href="/feedback">
                 <a className="text-bold text-sm underline__hover__link text-black">
-                  Contact
+                  Feedback
                 </a>
               </Link>
             </div>
