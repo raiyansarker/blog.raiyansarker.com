@@ -39,3 +39,7 @@ body {
     }
   }
 }
+
+.h-center {
+  @apply min-h-[calc(100vh-4rem)];
+}

@@ -57,11 +57,6 @@ const Footer = () => {
                   Status
                 </a>
               </Link>
-              <Link href="/feedback">
-                <a className="text-bold text-sm underline__hover__link text-black">
-                  Feedback
-                </a>
-              </Link>
             </div>
           </div>
           <div className="hidden md:block justify-self-end space-y-2">

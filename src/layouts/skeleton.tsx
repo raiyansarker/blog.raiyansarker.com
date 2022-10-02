@@ -13,7 +13,7 @@ const SkeletonLayout = ({ children }: PropsWithChildren) => {
           duration: 5000,
         }}
       />
-      <div className="z-[1] mb-[538px] md:mb-[550px] lg:mb-[602px] relative bg-white">
+      <div className="z-10 mb-[538px] md:mb-[550px] lg:mb-[602px] min-h-screen relative bg-white">
         <Header />
         {children}
       </div>
