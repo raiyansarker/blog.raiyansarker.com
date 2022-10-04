@@ -19,7 +19,8 @@
       // "@/*": ["*"],
       "@components/*": ["src/components/*"],
       "@styles/*": ["styles/*"],
-      "@layouts/*": ["src/layouts/*"]
+      "@layouts/*": ["src/layouts/*"],
+      "@shared/*": ["src/components/shared/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
